@@ -1,20 +1,12 @@
 import { Title } from "solid-start";
-import Counter from "~/components/Counter";
-import { useUserAgent } from "../start";
+// import { Repro } from "~/components/local";
+import { Repro } from "~/components/package";
 export default function Home() {
-	console.log(useUserAgent());
 	return (
 		<main>
 			<Title>Hello World</Title>
 			<h1>Hello world!</h1>
-			<Counter />
-			<p>
-				Visit{" "}
-				<a href="https://start.solidjs.com" target="_blank">
-					start.solidjs.com
-				</a>{" "}
-				to learn how to build SolidStart apps.
-			</p>
+			<Repro />
 		</main>
 	);
 }

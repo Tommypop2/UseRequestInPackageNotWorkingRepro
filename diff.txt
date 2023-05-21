@@ -1,0 +1,176 @@
+Comparing files local_server.js and MODULE_SERVER.JS
+***** local_server.js
+                type: "script",
+                href: "/assets/_...404_-f85d502d.js"
+        },
+***** MODULE_SERVER.JS
+                type: "script",
+                href: "/assets/_...404_-30db98c5.js"
+        },
+*****
+
+***** local_server.js
+                type: "script",
+                href: "/assets/entry-client-6a02efca.js"
+        },
+***** MODULE_SERVER.JS
+                type: "script",
+                href: "/assets/entry-client-4a624444.js"
+        },
+*****
+
+***** local_server.js
+                type: "script",
+                href: "/assets/index-a44f8fc4.js"
+        },
+***** MODULE_SERVER.JS
+                type: "script",
+                href: "/assets/index-90492a8c.js"
+        },
+*****
+
+***** local_server.js
+                type: "script",
+                href: "/assets/entry-client-6a02efca.js"
+        },
+***** MODULE_SERVER.JS
+                type: "script",
+                href: "/assets/entry-client-4a624444.js"
+        },
+*****
+
+***** local_server.js
+                type: "script",
+                href: "/assets/entry-client-6a02efca.js"
+        },
+***** MODULE_SERVER.JS
+                type: "script",
+                href: "/assets/entry-client-4a624444.js"
+        },
+*****
+
+***** local_server.js
+
+const ServerContext = createContext({});
+const useRequest = () => {
+  return useContext(ServerContext);
+};
+
+***** MODULE_SERVER.JS
+
+const ServerContext$1 = createContext({});
+
+*****
+
+***** local_server.js
+function Links() {
+  const context = useContext(ServerContext);
+  useAssets(() => getAssetsFromManifest(context.env.manifest, context.routerContext));
+***** MODULE_SERVER.JS
+function Links() {
+  const context = useContext(ServerContext$1);
+  useAssets(() => getAssetsFromManifest(context.env.manifest, context.routerContext));
+*****
+
+***** local_server.js
+function Meta() {
+  const context = useContext(ServerContext);
+  // @ts-expect-error The ssr() types do not match the Assets child types
+***** MODULE_SERVER.JS
+function Meta() {
+  const context = useContext(ServerContext$1);
+  // @ts-expect-error The ssr() types do not match the Assets child types
+*****
+
+***** local_server.js
+function Scripts() {
+  const context = useContext(ServerContext);
+  return [createComponent(HydrationScript, {}), isIslands , createComponent(NoHydration, {
+***** MODULE_SERVER.JS
+function Scripts() {
+  const context = useContext(ServerContext$1);
+  return [createComponent(HydrationScript, {}), isIslands , createComponent(NoHydration, {
+*****
+
+***** local_server.js
+
+function HttpStatusCode(props) {
+  const context = useContext(ServerContext);
+  {
+    context.setStatusCode(props.code);
+  }
+  onCleanup(() => {
+    {
+      context.setStatusCode(200);
+    }
+  });
+  return null;
+}
+
+***** MODULE_SERVER.JS
+
+const ServerContext = createContext({});
+const useRequest = () => {
+  return useContext(ServerContext);
+};
+
+new Set();
+new Map();
+
+*****
+
+***** local_server.js
+
+const _tmpl$ = ["<main", "><!--#-->", "<!--/--><!--#-->", "<!--/--><h1>Page Not Found</h1><p>Visit <a href=\"https://start.soli
+djs.com\" target=\"_blank\">start.solidjs.com</a> to learn how to build SolidStart apps.</p></main>"];
+function NotFound() {
+  return ssr(_tmpl$, ssrHydrationKey(), escape(createComponent(Title, {
+    children: "Not Found"
+  })), escape(createComponent(HttpStatusCode, {
+    code: 404
+  })));
+}
+***** MODULE_SERVER.JS
+
+function HttpStatusCode(props) {
+  const context = useContext(ServerContext$1);
+  {
+    context.setStatusCode(props.code);
+  }
+  onCleanup(() => {
+    {
+      context.setStatusCode(200);
+    }
+  });
+  return null;
+}
+*****
+
+***** local_server.js
+
+/// <reference path="../server/types.tsx" />
+***** MODULE_SERVER.JS
+
+const _tmpl$ = ["<main", "><!--#-->", "<!--/--><!--#-->", "<!--/--><h1>Page Not Found</h1><p>Visit <a href=\"https://start.soli
+djs.com\" target=\"_blank\">start.solidjs.com</a> to learn how to build SolidStart apps.</p></main>"];
+function NotFound() {
+  return ssr(_tmpl$, ssrHydrationKey(), escape(createComponent(Title, {
+    children: "Not Found"
+  })), escape(createComponent(HttpStatusCode, {
+    code: 404
+  })));
+}
+
+/// <reference path="../server/types.tsx" />
+*****
+
+***** local_server.js
+  sharedConfig.context.requestContext = event;
+  return createComponent(ServerContext.Provider, {
+    value: event,
+***** MODULE_SERVER.JS
+  sharedConfig.context.requestContext = event;
+  return createComponent(ServerContext$1.Provider, {
+    value: event,
+*****
+
